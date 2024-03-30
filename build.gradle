@@ -5,10 +5,10 @@ plugins {
 }
 
 group = 'com.kawaki'
-version = '0.0.1-SNAPSHOT'
+version = '0.0.1'
 
 java {
-	sourceCompatibility = '22'
+	sourceCompatibility = '18'
 }
 
 configurations {
@@ -24,9 +24,11 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation ('org.springframework.boot:spring-boot-starter-test')
+	testImplementation('org.assertj:assertj-core:3.11.1')
 }
 
 tasks.named('test') {
