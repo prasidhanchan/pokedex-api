@@ -1,5 +1,4 @@
 FROM gradle:8.7-jdk21 as build
-RUN apt install openjdk-21-jdk -y
 COPY . .
 RUN ./gradlew bootJar --no-daemon
 
