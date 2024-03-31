@@ -1,4 +1,5 @@
 FROM gradle:8.7-jdk21 AS build
+VOLUME /tmp
 COPY . .
 RUN ./gradlew bootJar --no-daemon
 
