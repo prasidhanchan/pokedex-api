@@ -1,6 +1,8 @@
 package com.kawaki.pokedex.services;
 
 import com.kawaki.pokedex.domain.Pokemon;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,7 +11,7 @@ import java.util.List;
 public interface PokemonService {
     Pokemon addPokemon(Pokemon pokemon);
 
-    List<Pokemon> getAllPokemon();
+    Page<Pokemon> getAllPokemon(Pageable pageable);
 
     List<Pokemon> getPokemonByName(String name);
 

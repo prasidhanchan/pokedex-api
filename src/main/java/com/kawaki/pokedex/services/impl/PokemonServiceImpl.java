@@ -3,6 +3,8 @@ package com.kawaki.pokedex.services.impl;
 import com.kawaki.pokedex.domain.Pokemon;
 import com.kawaki.pokedex.repositories.PokemonRepository;
 import com.kawaki.pokedex.services.PokemonService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;
@@ -24,8 +26,8 @@ public class PokemonServiceImpl implements PokemonService {
     }
 
     @Override
-    public List<Pokemon> getAllPokemon() {
-        return pokemonRepository.findAll();
+    public Page<Pokemon> getAllPokemon(Pageable pageable) {
+        return pokemonRepository.findAll(pageable);
     }
 
     @Override

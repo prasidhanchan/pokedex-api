@@ -18,6 +18,8 @@ public class Pokemon {
     private String name;
     @Builder.Default
     private String image = "";
+    @Builder.Default
+    private String color = "0XFF00AFFF";
     private String description;
     private String type;
     private String category;

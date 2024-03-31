@@ -3,6 +3,8 @@ package com.kawaki.pokedex.controllers;
 import com.kawaki.pokedex.domain.Pokemon;
 import com.kawaki.pokedex.services.impl.PokemonServiceImpl;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -47,8 +49,8 @@ public class PokemonController {
     }
 
     @GetMapping(path = "/get-all-pokemon")
-    public List<Pokemon> getAllPokemon() {
-        return pokemonService.getAllPokemon();
+    public Page<Pokemon> getAllPokemon(Pageable pageable) {
+        return pokemonService.getAllPokemon(pageable);
     }
 
     @GetMapping(path = "/get-pokemon/{name}")
