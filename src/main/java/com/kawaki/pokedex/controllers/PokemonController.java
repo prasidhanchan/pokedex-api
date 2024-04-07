@@ -28,7 +28,6 @@ public class PokemonController {
             @RequestParam(required = false) String key,
             @RequestBody Pokemon pokemon
     ) {
-        System.out.println(KEY);
         if (key != null && key.equals(KEY)) {
             pokemonService.addPokemon(pokemon);
             return new ResponseEntity<>(
