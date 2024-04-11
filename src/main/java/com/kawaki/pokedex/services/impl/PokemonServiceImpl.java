@@ -57,6 +57,7 @@ public class PokemonServiceImpl implements PokemonService {
                         existingPokemon -> {
                             Optional.ofNullable(pokemon.getName()).ifPresent(existingPokemon::setName);
                             Optional.ofNullable(pokemon.getImage()).ifPresent(existingPokemon::setImage);
+                            Optional.ofNullable(pokemon.getColor()).ifPresent(existingPokemon::setColor);
                             Optional.ofNullable(pokemon.getDescription()).ifPresent(existingPokemon::setDescription);
                             Optional.ofNullable(pokemon.getType()).ifPresent(existingPokemon::setType);
                             Optional.ofNullable(pokemon.getCategory()).ifPresent(existingPokemon::setCategory);
