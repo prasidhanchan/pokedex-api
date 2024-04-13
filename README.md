@@ -142,9 +142,8 @@ Output:
 
 <br>
 
-## Create your own Instance on Render
+## Run locally
 
-- Fork this repository
 - Create a env.properties file in resources directory:
 
   ```
@@ -156,4 +155,32 @@ Output:
   PROD_DB = Production DB name
   ```
 
-- Deploy on Render
+- Run command:
+
+  ```
+  gradlew bootRun
+  ```
+
+- Navigate to:
+  
+  ```
+  localhost:8080/
+  ```
+
+<br>
+
+## Create your own Instance on Render
+
+- Fork this repository.
+- Provide the Environment variables in the setup process on Render:
+
+  ```
+  KEY = AUTH_KEY
+  USER_NAME = your username
+  PASSWORD = your password
+  CLUSTER = your cluster
+  DEV_DB = test DB name
+  PROD_DB = Production DB name
+  ```
+    
+- Deploy your app.
