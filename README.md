@@ -19,17 +19,22 @@ This is a RESTful API built using Spring Boot with a clean MVC architecture that
 Output:
 
 ```json
-
 {
-    "_id": "6612bba0ced75d1ea06af6d2",
-    "name": "Pikachu",
-    "image": "https://firebasestorage.googleapis.com/v0/b/pokedex-2002.appspot.com/o/Pokemon%2FPikachu%20.png?alt=media&token=9e2f5ac2-6818-4fad-9e3f-81258418aa5a",
-    "color": "0xFFFAD04D",
-    "description": "When it is angered, it immediately discharges the energy stored in the pouches in its cheeks.",
-    "type": "Electric",
-    "category": "Mouse",
-    "height": "1 '04",
-    "weight": "13.2"
+    content: [
+        {
+            "_id": "6612bba0ced75d1ea06af6d2",
+            "name": "Pikachu",
+            "image": "https://firebasestorage.googleapis.com/v0/b/pokedex-2002.appspot.com/o/Pokemon%2FPikachu%20.png?alt=media&token=9e2f5ac2-6818-4fad-9e3f-81258418aa5a",
+            "color": "0xFFFAD04D",
+            "description": "When it is angered, it immediately discharges the energy stored in the pouches in its cheeks.",
+            "type": "Electric",
+            "category": "Mouse",
+            "height": "1 '04",
+            "weight": "13.2"
+        }
+    ],
+        {...},
+        ...
 }
 ```
 
