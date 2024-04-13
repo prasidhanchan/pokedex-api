@@ -20,7 +20,7 @@ Output:
 
 ```json
 {
-    content: [
+    "content": [
         {
             "_id": "6612bba0ced75d1ea06af6d2",
             "name": "Pikachu",
