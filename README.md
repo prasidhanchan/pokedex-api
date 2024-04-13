@@ -33,6 +33,8 @@ Output:
 }
 ```
 
+<br>
+
 ### Get Pokemon by name
 
 | Parameter       | Description                                                                                                                                                                                   |
@@ -56,10 +58,13 @@ Output:
 }
 ```
 
+<br>
+
 ### Post a Pokemon
 
 | Parameter       | Description                                                                                                                                                                                   |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `key` (string)  | This operation rquires an Auth key. Example: `POST /add-pokemon?key=AUTH_KEY`                                                                                                                 |
 | `body`          | Post Pokemon by providing a body. Example: `POST /add-pokemon`                                                                                                                                |
 
 
@@ -86,12 +91,14 @@ Output:
   Pokemon added successfully!
 ```
 
+<br>
 
 ### Patch a Pokemon
 
 | Parameter       | Description                                                                                                                                                                                   |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `_id` (string)  | Update a Pokemon by providing it's _id. Example: `PATCH /update-pokemon/6612bba0ced75d1ea06af6d2`                                                                                             |
+| `key` (string)  | This operation rquires an Auth key. Example: `PATCH /update-pokemon/6612bba0ced75d1ea06af6d2?key=AUTH_KEY`                                                                                    |
 | `body`          | Provide a body.                                                                                                                                                                               |
 
 
@@ -116,11 +123,14 @@ Output:
   Pokemon updated successfully!
 ```
 
+<br>
+
 ### Delete a Pokemon
 
 | Parameter       | Description                                                                                                                                                                                   |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `_id` (string)  | Delete a Pokemon by providing it's _id. Example: `DELETE /remove-pokemon/6612bba0ced75d1ea06af6d2`                                                                                            |
+| `key` (string)  | This operation rquires an Auth key. Example: `DELETE /remove-pokemon/6612bba0ced75d1ea06af6d2?key=AUTH_KEY`                                                                                   |
 
 
 Output:
@@ -129,3 +139,21 @@ Output:
 
   Pokemon removed successfully!
 ```
+
+<br>
+
+## Create your own Instance on Render
+
+- Fork this repository
+- Create a env.properties file in resources directory:
+
+  ```
+  KEY = AUTH_KEY
+  USER_NAME = your username
+  PASSWORD = your password
+  CLUSTER = your cluster
+  DEV_DB = test DB name
+  PROD_DB = Production DB name
+  ```
+
+- Deploy on Render
