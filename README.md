@@ -171,7 +171,7 @@ Output:
 
 ## Create your own Instance on Render
 
-- Fork this repository.
+- [Fork](https://github.com/prasidhanchan/pokedex-api/fork) this repository.
 - Provide the Environment variables in the setup process on Render:
 
   ```
