@@ -1,6 +1,6 @@
 # PokeDex API
 
-This API is built using Spring Boot with a clean MVC architecture that displays all the Pokemon available along with their details.
+This is a RESTful API built using Spring Boot with a clean MVC architecture that displays all the Pokemon available along with their details.
 
 # Features
 
