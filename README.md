@@ -155,6 +155,8 @@ Output:
   PROD_DB = Production DB name
   ```
 
+- Change the connection string to your in application.properties
+
 - Run command:
 
   ```
@@ -182,5 +184,6 @@ Output:
   DEV_DB = test DB name
   PROD_DB = Production DB name
   ```
-    
+
+- Change the connection string to your in application.properties
 - Deploy your app.
